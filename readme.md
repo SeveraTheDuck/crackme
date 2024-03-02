@@ -17,6 +17,7 @@ to grant access without any input.<br>
         <li>
         (Patch) In program after password is checked, AX register is being changed, depended on the check result. If password is wrong, AX = 0. <br>
         Output depends on AX value. If AX == 0, access is denied.<br>
-        So we want to change one byte after check and replace AX = 0 to AX = 1.
+        So we want to change one byte after check and replace AX = 0 to AX = 1.<br>
+        For that, compile and run patch.cpp. Run PASSWORD_P.COM and use any input, access will be granted.
         </li>
 </ol>
